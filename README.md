@@ -1,7 +1,3 @@
-This readme.txt file was generated on 2018—03-01 by Heidi Imker
-Date last modified: 2018—03-01	 Current version: V1.0
-
-
 TABLE OF CONTENTS
 =================
 DATASET TITLE
