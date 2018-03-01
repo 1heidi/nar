@@ -32,8 +32,6 @@ Molecular Biology Databases Published in Nucleic Acids Research between 1991-201
 
 This dataset was developed to create a census of sufficiently documented molecular biology databases to answer several preliminary research questions. Articles published in the annual Nucleic Acids Research (NAR) “Database Issues” were used to identify a population of databases for study. Namely, the questions addressed herein include: 1) what is the historical rate of database proliferation versus rate of database attrition, 2) to what extent do citations indicate persistence?, and 3) are databases under active maintenance and does evidence of maintenance likewise correlate to citation? An overarching goal of this study is to provide the ability to identify subsets of databases for further analysis, both as presented within this study and through subsequent use of this openly released dataset. 
 
-The GitHub repository is at https://github.com/1heidi/nar_repo
-
 Please read the associated openly available research article for context, additional details, and results: 
 
 Pre-Print
@@ -79,27 +77,26 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 ### DATASET DESCRIPTION 
 
-* Data sources: 
+#### Data sources: 
 
-- Initial article metadata was obtained through Scopus via the University of Illinois at Urbana-Champaign’s library website. 
-- Metadata was cleaned and augmented with URLs and additional metadata using PubMedCentral (https://www.ncbi.nlm.nih.gov/pmc/), the website for Nucleic Acids Research (NAR; https://academic.oup.com/nar), and the website for the Molecular Biology Database Collection (MBDC; http://www.oxfordjournals.org/nar/database/a/)
+* Initial article metadata was obtained through Scopus via the University of Illinois at Urbana-Champaign’s library website. 
+* Metadata was cleaned and augmented with URLs and additional metadata using PubMedCentral (https://www.ncbi.nlm.nih.gov/pmc/), the website for Nucleic Acids Research (NAR; https://academic.oup.com/nar), and the website for the Molecular Biology Database Collection (MBDC; http://www.oxfordjournals.org/nar/database/a/)
 
-* Data collection dates:
+#### Data collection dates:
 
-- Initial article metadata was retrieved from Scopus December 6, 2016 
-- MBDC metadata was retrieved from the website above on December 8, 2016
-- Database URLs were retrieved from abstracts on PubMedCentral and the NAR 	website between Dec 19, 2016 – Feb 22, 2017
+* Initial article metadata was retrieved from Scopus December 6, 2016 
+* MBDC metadata was retrieved from the website above on December 8, 2016
+* Database URLs were retrieved from abstracts on PubMedCentral and the NAR 	website between Dec 19, 2016 – Feb 22, 2017
 
-* Rules for standardizing distinct names (Y) into a single name (X):
-- Y explicitly billed as an “update” to X -> X
-- Y is just X plus version number 1, 2, 3, 4, 5, etc. (e.g. STITCH 5) -> X
-- Y formally known as X (e.g. full malaria) -> X
-- Y given as a generic title/name -> X (as determined by same or very similar url and/or same or very similar author set)
-
-Additional notes: 
-- Standardized sub-services into a single umbrella service if single url given in abstract.
-- If there is an umbrella organization (e.g. EBI) then just EBI (space) [Resource] – no dashes. If the dash seems to be part of the actual name, then kept.
-- Y remains Y if the purpose of the resource fundamentally different (e.g. Voronoia versus Voronoia4RNA)
+#### Rules for standardizing distinct names (Y) into a single name (X):
+* Y explicitly billed as an “update” to X -> X
+* Y is just X plus version number 1, 2, 3, 4, 5, etc. (e.g. STITCH 5) -> X
+* Y formally known as X (e.g. full malaria) -> X
+* Y given as a generic title/name -> X (as determined by same or very similar url and/or same or very similar author set)
+* Additional notes: 
+  * Standardized sub-services into a single umbrella service if single url given in abstract.
+  * If there is an umbrella organization (e.g. EBI) then just EBI (space) [Resource] – no dashes. If the dash seems to be part of the actual name, then kept.
+  * Y remains Y if the purpose of the resource fundamentally different (e.g. Voronoia versus Voronoia4RNA)
 
 ### DATA DICTIONARIES
 
