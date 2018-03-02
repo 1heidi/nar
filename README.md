@@ -116,11 +116,11 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **available_update_date** = If URL did resolve, the database website was reviewed to locate an update date.  Variable is either 1) “not_applicable” for databases whose URL did not resolve, 2) “unknown” if the URL did resolve but no date was located, or 3) the specific date found if the URL did resolve and a date was located
 
-* **notes** = miscellaneous notes observed
+* **notes** = Miscellaneous notes observed
                  
-* **article_year** = the year the associate NAR article was published   
+* **article_year** = Year the associate NAR article was published   
      
-* **citations** = the citation count for associated NAR article as of download from Scopus on December 6, 2016 
+* **citations** = Citation count for associated NAR article as of download from Scopus on December 6, 2016 
 
 #### Additional variables created for nar_v20_1.csv and then used throughout:
 
@@ -186,13 +186,13 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
             
 * **cum_debute_unavail** = Count of running cumulative total of newly debuted databases no longer available
 
-* **x** = average precent availability of databases 1991-2001
+* **x** = Average precent availability of databases 1991-2001
 
 #### Additional variables created for nar_v20_6.csv and nar_v20_6_sum.csv; used solely for the purposes of reporting database transitioning (discussed within article text only)
 
-* **start** = According to the debut article, if the database started 1) “offline” or 2) “online”
+* **start** = According to the debut article, if the database started; variables are 1) “offline” or 2) “online”
 
-* **transition** =  1) “transitioned” if started offline and moved to online, 2) “never_transitioned” if started offline and did not transition, or 3) “online_only” if started online
+* **transition** =  Variables are 1) “transitioned” if started offline and moved to online, 2) “never_transitioned” if started offline and did not transition, or 3) “online_only” if started online
 
 * **started_offline** = Count of number of databases that initially stated offline
 
