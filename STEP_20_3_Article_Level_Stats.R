@@ -1,4 +1,4 @@
-##STEP 3 - Article Categorization
+##STEP 3 - Article Categorization 
 ##Purpose: Categorize each article as a "debut" article or an "update" article
 ##Package(s): tidyverse, ggplot2
 ##Input file(s): nar_v20_2.csv

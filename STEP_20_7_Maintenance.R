@@ -1,4 +1,4 @@
-##STEP 7 - Maintenance
+##STEP 7 - Maintenance 
 ##Purpose: Determine maintenance timeframe and date since last update as observed on websites and as mapped to citation quartiles
 ##Package(s): tidyverse, ggplot2
 ##Input file(s):  nar_v20_4.csv

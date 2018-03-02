@@ -1,4 +1,4 @@
-##STEP 2 - Database Stats 
+##STEP 2 - Database Stats  
 ##Purpose: Determine descriptive stats for individual databases
 ##Package(s): tidyverse
 ##Input file(s): nar_v20_1.csv

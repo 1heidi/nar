@@ -1,4 +1,4 @@
-##STEP_20_8 Statistical tests for signifiance of trends and proportions
+##STEP_20_8 Statistical tests for signifiance of trends and proportions 
 ##Purpose: execute chisq.test and prop.trend.test to test for significance & reject null hypotheses. Ref for prop.trend.test: Introductory Statistics with R (2008) Dalgaard, Peter pgs. 149-151 and ref for chisq.test: Agresti, A. (2007) An Introduction to Categorical Data Analysis, 2nd ed., New York: John Wiley & Sons. Page 38.
 ##Package(s): base R
 ##Input file(s): see specifics for each test

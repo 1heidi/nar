@@ -1,4 +1,4 @@
-##STEP 5 - Issue Level Status
+##STEP 5 - Issue Level Status 
 ##Purpose: Determine issue level stats, including the average precent availability of databases 1991-2001
 ##Package(s): tidyverse, ggplot2, ggpmisc
 ##Input file(s): nar_v20_3.csv

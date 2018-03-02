@@ -1,4 +1,4 @@
-##STEP 6 - Online Transition
+##STEP 6 - Online Transition 
 ##Purpose: Determine how many db started out offline but then went online, finally summary stats 
 ##Package(s): tidyverse
 ##Input file(s): nar_v20_3.csv

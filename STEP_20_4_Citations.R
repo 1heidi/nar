@@ -1,4 +1,4 @@
-##STEP 4 - Citations and Citation Quartiles
+##STEP 4 - Citations and Citation Quartiles 
 ##Purpose: plot citations, also calculate & bin citation quartiles, and create summary table - also determine number of MBDC collection IDs vs unique NAR IDs for this study
 ##Process for quartiles: remove newest articles, then loop through to determine the ordered rank within issue for each article, then the percent rank within issue for each article, then average percent rank across all articles for db with > 1 articles, and finally assign citation quartile
 ##Package(s): tidyverse, ggplot2, stringr
