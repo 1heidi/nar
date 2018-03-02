@@ -96,7 +96,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * Y formally known as X (e.g. full malaria) -> X
 * Y given as a generic title/name -> X (as determined by same or very similar url and/or same or very similar author set)
 * Additional notes: 
-  * Standardized sub-services into a single umbrella service if single url given in abstract.
+  * Standardized sub-services into a single umbrella service if single url given in abstract 
   * If there is an umbrella organization (e.g. EBI) then just EBI (space) [Resource] – no dashes. If the dash seems to be part of the actual name, then kept.
   * Y remains Y if the purpose of the resource fundamentally different (e.g. Voronoia versus Voronoia4RNA)
 
