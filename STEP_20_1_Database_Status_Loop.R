@@ -1,4 +1,4 @@
-##STEP 1 - Database Status 
+##STEP 1 - Database Status
 ##Purpose: Loop through to determine availability status of each individual database
 ##Package(s): tidyverse
 ##Input file(s):  nar_v20.csv
