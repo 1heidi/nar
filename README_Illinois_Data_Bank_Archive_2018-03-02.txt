@@ -108,7 +108,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
           
 * **db_id** = Where possible (see associated article), this is the database’s MBDC id, following the format MBDC0###, otherwise it is a unique id applied of the purposes of this study following the format NAR9###. Therefore numbers are also not strictly continuous.
                
-* **resource_name** = A standardized name of the database represented in NAR articles. When an abbreviation, the name follows the following syntax "RN: Resource Name" to capture both the abbrievation and the spelled out name. The name may vary from that in the article if the name changed over time. See “naming” and “disambiguation” variables in the Notes column
+* **resource_name** = A standardized name of the database represented in NAR articles. When an abbreviation, the name follows the following syntax "RN: Resource Name" to capture both the abbreviation and the spelled out name. The name may vary from that in the article if the name changed over time. See “naming” and “disambiguation” variables in the Notes column
 
 * **access** = Mechanism by which the database was made available. Variables are 1) “physical” if available via tape, print-put or other physical media, 2) “server” if available via FTP, Gopher, etc., 3) “Not Available” if the article did not describe a database in existence as the time of the article, e.g. announcing a database no longer available or announcing an aspirational intent to develop a database, 4) “Supplement” for the single occurrence in which the data was included only as supplement to the article or 5) the specific URL published in the NAR article for the database
 
