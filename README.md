@@ -46,10 +46,9 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 ### FILE ORGANIZATION
 
-* This dataset consists of 1 folder containing 34 files:
-  * 1 Readme file (TXT)
+* This dataset consists of 1 folder containing 33 files:
+  * 1 Readme file (MD)
   * 6 image files of figures (PDF)
-  * 1 R markdown file (RMD)
   * 1 R project file (RPROJ)
   * 17 data files (CSV) 
   * 8 R script files (R)
