@@ -164,7 +164,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 #### Additional variables created for nar_v20_5.csv and nar_v20_5_sum.csv; used solely for the purposes of obtaining issue-level metrics
 
-* **article_year** = This is equivalent to issue year
+* **article_year** = Equivalent to issue year
 
 * **issue_total_citations** = Count of all citations for the issue
       
@@ -220,7 +220,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **maint_bin** = Databases with updates found were binned into two-year periods: 1) “< 2010”, 2) “2010-2011”, 3) “2012-2013”, 4) “2014-2015”, and  5) “2016-2017”
 
-* * **quartile_count** = Count of databases in a given maint_bin for a given quartile
+* **quartile_count** = Count of databases in a given maint_bin for a given quartile
 
 * **quartile_count_sum** = Sum of all databases in a given quartile
 
@@ -228,13 +228,13 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 ### DATA ANALYSIS
 
-* Program used:
-  * R version 3.3.3 (2017-03-06)
-  * Platform: x86_64-apple-darwin13.4.0 (64-bit)
-  * Running under: OS X El Capitan 10.11.6
-  * Packages: see below
+#### Program used:
+* R version 3.3.3 (2017-03-06)
+* Platform: x86_64-apple-darwin13.4.0 (64-bit)
+* Running under: OS X El Capitan 10.11.6
+* Packages: see below
 
-* There are 8 scripts that work sequentially:
+#### There are 8 scripts that work sequentially:
 
 **STEP 1** Purpose: Loop through to determine availability status of each individual database
    * Package(s): tidyverse
