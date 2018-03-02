@@ -8,7 +8,7 @@
 * KEYWORDS
 * FILE ORGANIZATION
 * DATASET DESCRIPTION 
-* DATA DICTIONARIES
+* DATA DICTIONARY
 * DATA ANALYSIS
 * SHARING & ACCESSING INFORMATION
 * ADDITIONAL NOTES/COMMENTS
@@ -55,7 +55,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * The initial input data file is nar_v20.csv. 
 
-* Each script is named for its step in the analysis process, with an additional short descriptor (see also “DATA ANALYSIS” section below). As data was reshaped and analyzed, scripts created subsequent cvs files which are named accordingly, e.g. STEP_20_1_Database_Status_Loop.R created nar_v20_1.csv, STEP_20_2_Database_Desc_Stats.R created nar_v20_2.csv, etc. 
+* Each script is named for its step in the analysis process, with an additional short descriptor (see also “DATA ANALYSIS” section below). As data was reshaped and analyzed, scripts created subsequent CSV files which are named accordingly, e.g. STEP_20_1_Database_Status_Loop.R created nar_v20_1.csv, STEP_20_2_Database_Desc_Stats.R created nar_v20_2.csv, etc. 
 
 * CSV files appended with “plot” are the exact data used for plots in article figures. 
 
@@ -104,17 +104,17 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 #### Variables for initial input CSV file, nar_v20.csv, and then used throughout:
 
-* **article_id** = A largely arbitrary number assigned to each NAR article on initial Scopus download of metadata. As articles were evaluated, some were deleted because of indexing errors or because they did not describe a specific database (e.g. editorials). Therefore these numbers are not strictly continuous, athough the lower the number the older the article, in general.
+* **article_id** = A largely arbitrary number assigned to each NAR article on initial Scopus download of metadata. As articles were evaluated, some were deleted because of indexing errors or because they did not describe a specific database (e.g. editorials). Therefore these numbers are not strictly continuous, although the lower the number the older the article, in general.
           
 * **db_id** = Where possible (see associated article), this is the database’s MBDC id, following the format MBDC0###, otherwise it is a unique id applied of the purposes of this study following the format NAR9###. Therefore numbers are also not strictly continuous.
                
-* **resource_name** = A standardized name of the database represented in NAR articles. When an abbreviation, the name follows the following syntax "RN: Resource Name" to capture both the abbrevation and the spelled out name. The name may vary from that in the article if the name changed over time. See “naming” and “disambiguation” variables in the Notes column
+* **resource_name** = A standardized name of the database represented in NAR articles. When an abbreviation, the name follows the following syntax "RN: Resource Name" to capture both the abbrievation and the spelled out name. The name may vary from that in the article if the name changed over time. See “naming” and “disambiguation” variables in the Notes column
 
-* **access** = Mechanism by which the database was made available. Variables are 1) “physical” if available via tape, print-put or other physical media, 2) “server” if available via FTP, Gopher, etc., 3) “Not Available” if the article did not describe a database in existance as the time of the article, e.g. announcing a database no longer available or announcing an aspirational intent to develop a database, 4) “Supplement” for the single occurrence in which the data was included only as supplement to the article or 5) the specific URL published in the NAR article for the database
+* **access** = Mechanism by which the database was made available. Variables are 1) “physical” if available via tape, print-put or other physical media, 2) “server” if available via FTP, Gopher, etc., 3) “Not Available” if the article did not describe a database in existence as the time of the article, e.g. announcing a database no longer available or announcing an aspirational intent to develop a database, 4) “Supplement” for the single occurrence in which the data was included only as supplement to the article or 5) the specific URL published in the NAR article for the database
 
 * **available** = Current availability at the time access was assessed between Dec 19, 2016 – Feb 22, 2017.  Variables are 1) “not_www” if the database was not available via the world wide web, meaning no URL was reported in the paper, 2) “no” if the database’s reported URL did not resolve, and “yes” if the database’s reported URL did resolve
 
-* **unavailable_message** = Message found if a URL did not resolve. Variables are 1) “blank page” if a plain, blank page returned, 2) “can't be reached” if the message timed out and returned that the site couldn’t be reached, 3) “discontinued notice” if the page indicated the resource was discontinued with no further information, 4) “forbidden” if the page returned that access was forbidden, 5) “malware warning” if a security warning returned, 6) “not found” if the page simply stated not found, 7) “related generic commercial site redirect” if the page resolved to a commercial website that initially hosted the database but the current page did not provide information about the database, 8) “related generic government site redirect” if the page resolved to a government website that initially hosted the database but the current  page did not provide information about the database, 9) “related generic publisher site redirect” the page resolved to a publishers website that initially hosted the database but the current page did not provide information about the database, 10) ”related generic research institution site redirect” the page resolved to the website of research institution that initially hosted the database but the current page did not provide information about the database, 11) “service unavailable” if the page returned that the service was not available, 12) “unrelated site redirect” if the page returned was completely unrelated (e.g. claiming of a lasped domain), and 13) "not applicable" for URLs that did resolve appropriately (no message applies)
+* **unavailable_message** = Message found if a URL did not resolve. Variables are 1) “blank page” if a plain, blank page returned, 2) “can't be reached” if the message timed out and returned that the site couldn’t be reached, 3) “discontinued notice” if the page indicated the resource was discontinued with no further information, 4) “forbidden” if the page returned that access was forbidden, 5) “malware warning” if a security warning returned, 6) “not found” if the page simply stated not found, 7) “related generic commercial site redirect” if the page resolved to a commercial website that initially hosted the database but the current page did not provide information about the database, 8) “related generic government site redirect” if the page resolved to a government website that initially hosted the database but the current  page did not provide information about the database, 9) “related generic publisher site redirect” the page resolved to a publishers website that initially hosted the database but the current page did not provide information about the database, 10) ”related generic research institution site redirect” the page resolved to the website of research institution that initially hosted the database but the current page did not provide information about the database, 11) “service unavailable” if the page returned that the service was not available, 12) “unrelated site redirect” if the page returned was completely unrelated (e.g. claiming of a lapsed domain), and 13) "not applicable" for URLs that did resolve appropriately (no message applies)
 
 * **available_update_date** = If URL did resolve, the database website was reviewed to locate an update year. Variable is either 1) “not_applicable” for databases whose URL did not resolve, 2) “unknown” if the URL did resolve but no year was located, or 3) the specific year found if the URL did resolve and a year was located
 
@@ -188,7 +188,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
             
 * **cum_debute_unavail** = Count of running cumulative total of debuted databases within issue no longer available
 
-* **x** = Average precent availability of databases debuted between 1991-2001
+* **x** = Average percent availability of databases debuted between 1991-2001
 
 #### Additional variables created for nar_v20_6.csv and nar_v20_6_sum.csv; used solely for the purposes of reporting database transitioning (discussed within article text only)
 
@@ -206,7 +206,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **db_last_update** = The most recent update, reported in years, found for a database
 
-* **maintdiff** =  Length of time, repored in years, between when the database deputed and the most recent update year
+* **maintdiff** =  Length of time, reported in years, between when the database deputed and the most recent update year
 
 * **maint_aft_debut** = Determined if databases were updated after their initial debut in an NAR Database Issue. Variables are 1) “1” if update year found is at least one year greater than the debut year, 2) “0” if the database was last updated prior to the publication year of its associated NAR debut article, and 3) “NA” if no update year was found
 
