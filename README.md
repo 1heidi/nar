@@ -49,7 +49,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * This dataset consists of 34 files:
   * 1 Readme file (MD)
   * 1 Readme file for dataset archived in the Illinios Data Bank(TXT)
-  * 6 image files of figures (PDF)
+  * 6 image files of figures (TIFF)
   * 1 R project file (RPROJ)
   * 17 data files (CSV) 
   * 8 R script files (R)
