@@ -111,7 +111,7 @@ ggplot() +
         strip.text = element_text(face='bold',size=12,color='black'),
         panel.spacing = unit(1, "lines"))
 
-## Determine count for *ALL* databases where an update could be located on the website, not just those in the sample above (meaning will include those more recently debuted)
+## Determine count for *ALL* databases where a date could be located on the website, not just those in the sample above (meaning will include those more recently debuted). This does not necessarily these mean the databases have been updated since the year found may be the same as the year the database debuted - it's simply a count of the number of database where a date could be located.
 
 nar_v20_3_available <- filter(nar_v20_3, status == "yes")
 
