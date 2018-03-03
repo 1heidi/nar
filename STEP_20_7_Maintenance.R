@@ -111,7 +111,7 @@ ggplot() +
         strip.text = element_text(face='bold',size=12,color='black'),
         panel.spacing = unit(1, "lines"))
 
-## Determine count for *ALL* databases with updates, not just those in the sample above (meaning will include those more recently debuted)
+## Determine count for *ALL* databases where an update could be located, not just those in the sample above (meaning will include those more recently debuted)
 
 nar_v20_3_available <- filter(nar_v20_3, status == "yes")
 
