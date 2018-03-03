@@ -272,7 +272,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 **STEP 7** Purpose: Determine maintenance timeframe and year since last update as observed on websites and as mapped to citation quartiles
    * Package(s): tidyverse, ggplot2
-   * Input file(s):  nar_v20_4.csv
+   * Input file(s):  nar_v20_3.csv, nar_v20_4.csv
    * Output file(s): nar_v20_7.csv, nar_v20_7_tab_2.csv, nar_v20_7_plot.csv, and Figure_5_Maintenance.PDF
 
 **STEP 8** Purpose: Execute chisq.test and prop.trend.test to test for significance & reject null hypotheses. Ref for prop.trend.test: Introductory Statistics with R (2008) Dalgaard, Peter pgs. 149-151 and ref for chisq.test: Agresti, A. (2007) An Introduction to Categorical Data Analysis, 2nd ed., New York: John Wiley & Sons. Page 38.
