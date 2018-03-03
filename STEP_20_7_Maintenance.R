@@ -1,18 +1,26 @@
 ##STEP 7 - Maintenance 
 ##Purpose: Determine maintenance timeframe and date since last update as observed on websites and as mapped to citation quartiles
 ##Package(s): tidyverse, ggplot2
-##Input file(s):  nar_v20_4.csv
+##Input file(s):  nar_v20_3.csv, nar_v20_4.csv
 ##Output file(s): nar_v20_7.csv, nar_v20_7_tab_2.csv, nar_v20_7_plot.csv, Figure_5_Maintenance.PDF
 
+## Want to use the same set of databases as used in binning into citation quartiles (STEP 4), but need all articles because they are tied to specific URLs and "available_update_dates" which may be different if sites not in sync (occasional but did happen) OR if only the URL from a later article resolves
+
 library(tidyverse)
+
 nar_v20_4 <- read.csv("nar_v20_4.csv")
 nar_v20_4_available <- filter(nar_v20_4, status == "yes")
+nar_v20_4_ids <- unique(select(nar_v20_4_available, db_id, quartile)) ## gives ids for all 816 evaluated in STEP 4 - with quartile 
 
-## Note databases w/ diff URLS may have diff update dates (either unknown or acutally different if not maintaining both URLs in concert), so assign db_last_update as the most recent since at least one version is being updated
+nar_v20_3 <- read.csv("nar_v20_3.csv")
 
-nar_v20_4_available$available_update_date <- as.numeric(as.character(nar_v20_4_available$available_update_date)) ## expect NA introduced by coercion
+nar_v20_7_sample <- left_join(nar_v20_4_ids, nar_v20_3, by = "db_id")
 
-nar_v20_4_available_2 <- nar_v20_4_available %>%
+## Since databases w/ diff URLS may have diff update dates, assign db_last_update as the most recent since at least one version is being updated
+
+nar_v20_7_sample$available_update_date <- as.numeric(as.character(nar_v20_7_sample$available_update_date)) ## expect NA introduced by coercion
+
+nar_v20_7_sample_2 <- nar_v20_7_sample %>%
   group_by(db_id) %>%
   mutate(db_last_update = (test = ifelse(all(is.na(available_update_date)),
                             yes = NA,
@@ -22,11 +30,9 @@ nar_v20_4_available_2 <- nar_v20_4_available %>%
                                      no = 0))) %>%
           mutate(maintdiff = (db_last_update - debut_yr)) ## to check aft_debut_calc returns
 
-nar_v20_4_available_3 <- select(nar_v20_4_available_2, db_id, resource_name, status, total_articles, total_citations, ave_issue_percent_rank, debut_yr, db_last_update, quartile, maintdiff, maint_aft_debut)
+nar_v20_7_sample_3 <- select(nar_v20_7_sample_2, db_id, resource_name, status, total_articles, total_citations, debut_yr, db_last_update, maintdiff, maint_aft_debut, quartile) 
 
-nar_v20_4_available_3 <-distinct(nar_v20_4_available_3)  ## this number should match the number of total databases still available in the citation quartile analysis (STEP 4)
-
-nar_v20_7 <- nar_v20_4_available_3
+nar_v20_7 <- distinct(nar_v20_7_sample_3)
 
 ## output
 write.csv(nar_v20_7,"nar_v20_7.csv", row.names = FALSE)
@@ -104,4 +110,28 @@ ggplot() +
         strip.background = element_blank(),
         strip.text = element_text(face='bold',size=12,color='black'),
         panel.spacing = unit(1, "lines"))
-  
+
+## Determine count for *ALL* databases with updates, not just those in the sample above (meaning will include those more recently debuted)
+
+nar_v20_3_available <- filter(nar_v20_3, status == "yes")
+
+nar_v20_3_available$available_update_date <- as.numeric(as.character(nar_v20_3_available$available_update_date))
+
+nar_v20_3_available_2 <- nar_v20_3_available %>%
+  group_by(db_id) %>%
+      mutate(db_last_update = (test = ifelse(all(is.na(available_update_date)),
+                                         yes = NA,
+                                         no = max(na.omit(available_update_date))))) %>%
+            mutate(maint_aft_debut = (test = ifelse((db_last_update - debut_yr) > 1,
+                                          yes = 1,
+                                          no = 0))) %>%
+                 mutate(maintdiff = (db_last_update - debut_yr))
+
+nar_v20_3_available_3 <- select(nar_v20_3_available_2, db_id, resource_name, status, debut_yr, db_last_update)
+
+nar_v20_3_available_4 <- nar_v20_3_available_3[complete.cases(nar_v20_3_available_3), ]
+
+nar_v20_3_available_5 <- distinct(nar_v20_3_available_4) ## 591 updated total overall years 
+
+## cross check counts:
+nar_v20_3_available_6 <- filter(nar_v20_3_available_5, debut_yr <2013) ## returns 434 as found above
