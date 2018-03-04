@@ -258,12 +258,12 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 **STEP 4** Purpose: Plot citations, calculate & bin citation quartiles, and create summary table - also determine number of MBDC collection IDs vs unique NAR IDs for this study
    * Package(s): tidyverse, ggplot2, stringr
    * Input file(s): nar_v20_3.csv
-   * Output file(s): nar_v20_3_plot_2.csv, nar_v20_4.csv, nar_v20_4_tab_1.csv, Figure_2_Citations.PDF
+   * Output file(s): nar_v20_3_plot_2.csv, nar_v20_4.csv, nar_v20_4_tab_1.csv, Figure_3_Citations.PDF
 
 **STEP 5** Purpose: Determine issue level stats, including the average precent availability of databases 1991-2001 and maximum points of curvatures
    * Package(s): tidyverse, ggplot2, ggpmisc
    * Input file(s): nar_v20_3.csv
-   * Output file(s): nar_v20_5.csv, nar_v20_5_scratch.csv, nar_v20_5_sum.csv, nar_v20_5_plot_4.csv, Figure_3_DB_Growth.PDF, Figure_4_DB_Avail.PDF, Figure_S1_Cumulative_Citations.PDF
+   * Output file(s): nar_v20_5.csv, nar_v20_5_scratch.csv, nar_v20_5_sum.csv, nar_v20_5_plot_4.csv, Figure_2_DB_Growth.PDF, Figure_4_DB_Avail.PDF, Figure_S1_Cumulative_Citations.PDF
 
 **STEP 6** Purpose: Determine how many databases started out offline but then went online, with summary stats 
    * Package(s): tidyverse
