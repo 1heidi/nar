@@ -12,15 +12,15 @@ prop.trend.test(nar_v20_4_sum$available, nar_v20_4_sum$databases)
 
 ##### Test Trend in Citation Quartiles for:  Updated Databases Found  (Table 2)
 
-## input:  nar_v20_7_sum.csv
-prop.trend.test(nar_v20_7_sum$updates_found, nar_v20_7_sum$db_sample)
-## output:  X-squared = 42.558, df = 1, p-value = 6.862e-11
+## input:  nar_v20_7_tab_2.csv
+prop.trend.test(nar_v20_7_tab_2$updates_found, nar_v20_7_tab_2$db_sample)
+## output:  X-squared = 46.084, df = 1, p-value = 1.133e-11
 
 ##### Test Trend in Citation Quartiles for:  Maintenace After Debut  (Table 2)
 
 ## input:  nar_v20_7_sum.csv
-prop.trend.test(nar_v20_7_sum$sum_maint_aft_debut, nar_v20_7_sum$updates_found)
-## output:  X-squared = 23.278, df = 1, p-value = 1.402e-06
+prop.trend.test(nar_v20_7_tab_2$sum_maint_aft_debut, nar_v20_7_tab_2$updates_found)
+## output:  X-squared = 23.599, df = 1, p-value = 1.186e-06
 
 ##### Pearson's Chi-squared Test for Count Data for: Update Periods within Quartiles  (Figure 5)
 
@@ -31,13 +31,13 @@ q3 <- filter(nar_v20_7_plot, quartile == 3)
 q4 <- filter(nar_v20_7_plot, quartile == 4)
 
 chisq.test(q1$quartile_count, p = rep(1/5,5))
-##output:  X-squared = 150.43, df = 4, p-value < 2.2e-16
+##output:  X-squared = 160.67, df = 4, p-value < 2.2e-16
 
 chisq.test(q2$quartile_count, p = rep(1/5,5))
-##output:  X-squared = 95.197, df = 4, p-value < 2.2e-16
+##output:  X-squared = 108.73, df = 4, p-value < 2.2e-16
 
 chisq.test(q3$quartile_count, p = rep(1/5,5))
-##output:  X-squared = 23.727, df = 4, p-value = 9.058e-05
+##output:  X-squared = 25.386, df = 4, p-value = 4.207e-05
 
 chisq.test(q4$quartile_count,p = rep(1/5,5))
-##output:  X-squared = 5.2676, df = 4, p-value = 0.2609
+##output:  X-squared = 5.6389, df = 4, p-value = 0.2278
