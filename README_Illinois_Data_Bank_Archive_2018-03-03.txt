@@ -66,12 +66,12 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * CSV file appended with “scratch” occurs only once and is an intermediate file necessary for the code to execute in step 5 specifically
 
 * Files necessary to create Figures
-  * Figure 1: STEP_20_3_Article_Level_Stats.R & nar_v20_3_plot_1.csv
-  * Figure 2: STEP_20_4_Citations.R & nar_v20_3_plot_2.csv
-  * Figure 3: STEP_20_5_Issue_Level_Stats.R & nar_v20_5.csv (csv used unchanged)
-  * Figure 4: STEP_20_5_Issue_Level_Stats.R & nar_v20_5_plot_4.csv
-  * Figure 5: STEP_20_7_Maintenance.R & nar_v20_7_plot.csv
-  * Figure S1: STEP_20_5_Issue_Level_Stats.R & nar_v20_5.csv (csv used unchanged)
+  * Figure 1 Article Growth: STEP_20_3_Article_Level_Stats.R & nar_v20_3_plot_1.csv
+  * Figure 2 Database Growth: STEP_20_5_Issue_Level_Stats.R & nar_v20_5.csv (csv used unchanged)
+  * Figure 3 Citations: STEP_20_4_Citations.R & nar_v20_3_plot_2.csv
+  * Figure 4 Attrition: STEP_20_5_Issue_Level_Stats.R & nar_v20_5_plot_4.csv
+  * Figure 5 Maintenance: STEP_20_7_Maintenance.R & nar_v20_7_plot.csv
+  * Figure S1 Cumulative Citations: STEP_20_5_Issue_Level_Stats.R & nar_v20_5.csv (csv used unchanged)
 
 * Files necessary to create Tables (in article only)
   * Table 1: STEP_20_4_Citations.R & nar_v20_4_tab_1.csv
@@ -259,7 +259,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
    * Input file(s): nar_v20_3.csv
    * Output file(s): nar_v20_3_plot_2.csv, nar_v20_4.csv, nar_v20_4_tab_1.csv, Figure_2_Citations.PDF
 
-**STEP 5** Purpose: Determine issue level stats as well as the average precent availability of databases 1991-2001
+**STEP 5** Purpose: Purpose: Determine issue level stats, including the average precent availability of databases 1991-2001 and maximum points of curvatures
    * Package(s): tidyverse, ggplot2, ggpmisc
    * Input file(s): nar_v20_3.csv
    * Output file(s): nar_v20_5.csv, nar_v20_5_scratch.csv, nar_v20_5_sum.csv, nar_v20_5_plot_4.csv, Figure_3_DB_Growth.PDF, Figure_4_DB_Avail.PDF, Figure_S1_Cumulative_Citations.PDF
