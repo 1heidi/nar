@@ -236,7 +236,22 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * RStudio 1.0.136 
 * Platform: x86_64-apple-darwin13.4.0 (64-bit)
 * Running under: OS X El Capitan 10.11.6
-* Packages: see below
+* Attached base packages:
+  * stats
+  * graphics
+  * grDevices
+  * utils
+  * datasets 
+  * methods
+  * base     
+* Other attached packages:
+  * dplyr_0.7.4
+  * purrr_0.2.2.2   
+  * readr_1.1.1    
+  * tidyr_0.6.3
+  * tibble_1.3.4    
+  * ggplot2_2.2.1  
+  * tidyverse_1.1.1
 
 #### There are 8 scripts that work sequentially:
 
