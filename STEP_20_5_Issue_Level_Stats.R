@@ -123,6 +123,8 @@ write.csv(ave, "nar_v20_5_sum.csv", row.names = FALSE)
 ## determining inflection points
 
 ## database growth
+
+nar_v20_5 <- read.csv("nar_v20_5.csv")
 d <- select(nar_v20_5, "article_year", "cum_debute")
 d.spl <- with(d, smooth.spline(article_year, cum_debute, df = 3))
 c_db <- with(d, predict(d.spl, x = article_year, deriv = 2))
@@ -136,6 +138,7 @@ c_db_df <- data.frame(c)
 
 ## database attrition
 
+nar_v20_5_plot_4 <- read.csv("nar_v20_5_plot_4.csv")
 d_t <- select(nar_v20_5_plot_4, "article_year", "percent_avail")
 d_t.spl <- with(d_t, smooth.spline(article_year, percent_avail, df = 3))
 c_d_t <- with(d_t, predict(d_t.spl, x = article_year, deriv = 2))
@@ -147,6 +150,8 @@ c_d_t_df <- data.frame(c_d_t)
 ## 2002 2.822998e-01
 
 ## citations
+
+nar_v20_5 <- read.csv("nar_v20_5.csv")
 cit <- select(nar_v20_5, "article_year", "cum_cit")
 cit.spl <- with(cit, smooth.spline(article_year, cum_cit, df = 3))
 c_cit <- with(cit, predict(cit.spl, x = article_year, deriv = 2))
