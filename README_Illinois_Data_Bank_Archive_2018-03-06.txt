@@ -30,7 +30,7 @@ Molecular Biology Databases Published in Nucleic Acids Research between 1991-201
 
 ### SUMMARY/ABSTRACT
 
-This dataset was developed to create a census of sufficiently documented molecular biology databases to answer several preliminary research questions. Articles published in the annual Nucleic Acids Research (NAR) “Database Issues” were used to identify a population of databases for study. Namely, the questions addressed herein include: 1) what is the historical rate of database proliferation versus rate of database attrition, 2) to what extent do citations indicate persistence?, and 3) are databases under active maintenance and does evidence of maintenance likewise correlate to citation? An overarching goal of this study is to provide the ability to identify subsets of databases for further analysis, both as presented within this study and through subsequent use of this openly released dataset. 
+This dataset was developed to create a census of sufficiently documented molecular biology databases to answer several preliminary research questions. Articles published in the annual Nucleic Acids Research (NAR) “Database Issues” were used to identify a population of databases for study. Namely, the questions addressed herein include: 1) what is the historical rate of database proliferation versus rate of database attrition?, 2) to what extent do citations indicate persistence?, and 3) are databases under active maintenance and does evidence of maintenance likewise correlate to citation? An overarching goal of this study is to provide the ability to identify subsets of databases for further analysis, both as presented within this study and through subsequent use of this openly released dataset. 
 
 * Please read the associated openly available research article for context, additional details, and results: 
 
@@ -234,7 +234,22 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * RStudio 1.0.136 
 * Platform: x86_64-apple-darwin13.4.0 (64-bit)
 * Running under: OS X El Capitan 10.11.6
-* Packages: see below
+* Attached base packages:
+  * stats
+  * graphics
+  * grDevices
+  * utils
+  * datasets 
+  * methods
+  * base     
+* Other attached packages:
+  * dplyr_0.7.4
+  * purrr_0.2.2.2   
+  * readr_1.1.1    
+  * tidyr_0.6.3
+  * tibble_1.3.4    
+  * ggplot2_2.2.1  
+  * tidyverse_1.1.1
 
 #### There are 8 scripts that work sequentially:
 
