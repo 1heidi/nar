@@ -4,6 +4,8 @@
 ##Input file(s): nar_v20_3.csv
 ##Output file(s): nar_v20_5.csv, nar_v20_5_plot_4.csv, nar_v20_5_sum.csv, nar_v20_5_scratch.csv, Figure_2_DB_Growth.PDF, Figure_4_DB_Avail.PDF, Figure_S1_Cumulative_Citations.PDF
 
+library(tidyverse)
+
 nar <- read.csv("nar_v20_3.csv")
 nar <- tbl_df(nar)
 
@@ -123,7 +125,7 @@ write.csv(ave, "nar_v20_5_sum.csv", row.names = FALSE)
 ## database growth
 d <- select(nar_v20_5, "article_year", "cum_debute")
 d.spl <- with(d, smooth.spline(article_year, cum_debute, df = 3))
-c_db <- with(t, predict(d.spl, x = article_year, deriv = 2))
+c_db <- with(d, predict(d.spl, x = article_year, deriv = 2))
 plot(c_db, type = "l")
 c_db_df <- data.frame(c)
 

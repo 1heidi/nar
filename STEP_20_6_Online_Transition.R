@@ -4,6 +4,8 @@
 ##Input file(s): nar_v20_3.csv
 ##Output file(s): nar_v20_6.csv, nar_v20_6_sum.csv
 
+library(tidyverse)
+
 nar_v20_3 <- read.csv("nar_v20_3.csv")
 
 nar_v20_6a <- nar_v20_3 %>%
