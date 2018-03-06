@@ -250,6 +250,8 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
   * tibble_1.3.4    
   * ggplot2_2.2.1  
   * tidyverse_1.1.1
+  * ggpmisc_0.2.16
+  * stringr_1.2.0 
 
 #### There are 8 scripts that work sequentially:
 
