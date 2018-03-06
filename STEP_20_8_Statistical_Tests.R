@@ -6,25 +6,29 @@
 
 ##### Test Trend in Citation Quartiles for:  Available Databases (Table 1)
 
-##input: nar_v20_4_sum.csv
-prop.trend.test(nar_v20_4_sum$available, nar_v20_4_sum$databases)
-## output: X-squared = 86.245, df = 1, p-value < 2.2e-16
+##input: nar_v20_4_tab_1.csv
+nar_v20_4_tab_1<- read.csv("nar_v20_4_tab_1.csv")
+prop.trend.test(nar_v20_4_tab_1$curr_available_count, nar_v20_4_tab_1$db_count)
+## output: X-squared = 87.508, df = 1, p-value < 2.2e-16
 
 ##### Test Trend in Citation Quartiles for:  Updated Databases Found  (Table 2)
 
 ## input:  nar_v20_7_tab_2.csv
+nar_v20_7_tab_2<- read.csv("nar_v20_7_tab_2.csv")
 prop.trend.test(nar_v20_7_tab_2$updates_found, nar_v20_7_tab_2$db_sample)
 ## output:  X-squared = 46.084, df = 1, p-value = 1.133e-11
 
 ##### Test Trend in Citation Quartiles for:  Maintenace After Debut  (Table 2)
 
-## input:  nar_v20_7_sum.csv
+## input:  nar_v20_7_tab_2.csv
+nar_v20_7_tab_2<- read.csv("nar_v20_7_tab_2.csv")
 prop.trend.test(nar_v20_7_tab_2$sum_maint_aft_debut, nar_v20_7_tab_2$updates_found)
 ## output:  X-squared = 23.599, df = 1, p-value = 1.186e-06
 
 ##### Pearson's Chi-squared Test for Count Data for: Update Periods within Quartiles  (Figure 5)
 
 ## input:  nar_v20_7_plot.csv
+nar_v20_7_plot<- read.csv("nar_v20_7_plot.csv")
 q1 <- filter(nar_v20_7_plot, quartile == 1)
 q2 <- filter(nar_v20_7_plot, quartile == 2)
 q3 <- filter(nar_v20_7_plot, quartile == 3)
