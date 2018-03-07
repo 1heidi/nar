@@ -78,7 +78,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
   * Table 1: STEP_20_4_Citations.R & nar_v20_4_tab_1.csv
   * Table 2: STEP_20_7_Maintenance.R & nar_v20_7_tab_2.csv
 
-* A CSV file is also included that maps ids used for this study with a global identifier for the articles. The global identifiers mapped are nearly all DOIs, but a DOI could not be located for 17 of the articles from 1994, so PMCIDs are provided instead. This file is not necessary for these analyses but may be helpful for futher reuse.  
+* A CSV file is also included that maps ids used for this study with a global identifier for the articles. The global identifiers mapped are nearly all DOIs, but a DOI could not be located for 17 of the articles from 1994, so PMCIDs are provided instead. This file is not necessary for these analyses but may be helpful for further reuse.  
 
 ### DATASET DESCRIPTION 
 
