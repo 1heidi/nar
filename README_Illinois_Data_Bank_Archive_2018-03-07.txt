@@ -46,10 +46,10 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 ### FILE ORGANIZATION
 
-* This dataset consists of 1 folder containing 32 files:
+* This dataset consists of 1 folder containing 33 files:
   * 1 Readme file (TXT)
   * 6 image files of figures (PDF)
-  * 17 data files (CSV) 
+  * 18 data files (CSV) 
   * 8 R script files (R)
 
 * The initial input data file is nar_v20.csv. 
@@ -75,6 +75,8 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 * Files necessary to create Tables (in article only)
   * Table 1: STEP_20_4_Citations.R & nar_v20_4_tab_1.csv
   * Table 2: STEP_20_7_Maintenance.R & nar_v20_7_tab_2.csv
+
+* A CSV file that maps the article and database ids used for this study with a global identifier, either DOI or PMCID, for each article is also included. This file is not necessary for these analyses but may be helpful for futher reuse.  
 
 ### DATASET DESCRIPTION 
 
@@ -225,7 +227,11 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **quartile_count_sum** = Sum of all databases in a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)         
 
-* **quartile_percent** = Percent of databases in a given maint_bin for a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)   
+* **quartile_percent** = Percent of databases in a given maint_bin for a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)  
+
+#### Additional variables created for nar_id_mapping.csv; this file is not necessary for these analyses but may be helpful for future reuse
+
+* **article_global_id** = The DOI associated with each NAR Database Issue article; a DOI could not be found for 17 articles in 1994 and PMCIDs are provided instead 
 
 ### DATA ANALYSIS
 
