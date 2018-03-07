@@ -111,7 +111,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **access** = Mechanism by which the database was made available. Variables are 1) “physical” if available via tape, print-put or other physical media, 2) “server” if available via FTP, Gopher, etc., 3) “Not Available” if the article did not describe a database in existence as the time of the article, e.g. announcing a database no longer available or announcing an aspirational intent to develop a database, 4) “Supplement” for the single occurrence in which the data was included only as supplement to the article or 5) the specific URL published in the NAR article for the database
 
-* **available** = Current availability at the time access was assessed between Dec 19, 2016 – Feb 22, 2017.  Variables are 1) “not_www” if the database was not available via the world wide web, meaning no URL was reported in the paper, 2) “no” if the database’s reported URL did not resolve, and “yes” if the database’s reported URL did resolve
+* **available** = Current availability at the time access was assessed between Dec 19, 2016 – Feb 22, 2017.  Variables are 1) “not_www” if the database was not available via the world wide web, meaning no URL was reported in the paper, 2) “no” if the database’s reported URL did not resolve, and 3) “yes” if the database’s reported URL did resolve
 
 * **unavailable_message** = Message found if a URL did not resolve. Variables are 1) “blank page” if a plain, blank page returned, 2) “can't be reached” if the message timed out and returned that the site couldn’t be reached, 3) “discontinued notice” if the page indicated the resource was discontinued with no further information, 4) “forbidden” if the page returned that access was forbidden, 5) “malware warning” if a security warning returned, 6) “not found” if the page simply stated not found, 7) “related generic commercial site redirect” if the page resolved to a commercial website that initially hosted the database but the current page did not provide information about the database, 8) “related generic government site redirect” if the page resolved to a government website that initially hosted the database but the current  page did not provide information about the database, 9) “related generic publisher site redirect” the page resolved to a publishers website that initially hosted the database but the current page did not provide information about the database, 10) ”related generic research institution site redirect” the page resolved to the website of research institution that initially hosted the database but the current page did not provide information about the database, 11) “service unavailable” if the page returned that the service was not available, 12) “unrelated site redirect” if the page returned was completely unrelated (e.g. claiming of a lapsed domain), and 13) "not applicable" for URLs that did resolve appropriately (no message applies)
 
@@ -125,7 +125,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 #### Additional variables created for nar_v20_1.csv and then used throughout:
 
-* **status** = Using information available for each article, determined overall stats of the database. Variables are 1) “yes” if at least URL reported resolved, 2) “no” if none of the URLs reported resolved, 3) “never_www” if the database was never available via a URL
+* **status** = Using information available for each article, determined overall status of each database. Variables are 1) “yes” if at least one URL reported resolved, 2) “no” if none of the URLs reported resolved, and 3) “never_www” if the database was never available via a URL
 
 #### Additional variables created for nar_v20_2.csv and then used throughout:
 
@@ -145,7 +145,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **issue_percent_rank** = Calculated overall percent rank for each article within the issue. Variables are a percentage ranging from 0.0000 to 0.9949
 
-* **ave_issue_percent_rank** = For databases with multiple articles, the average issue percent rank across articles was averaged. Variables range from 0.0000 to 0.9943. For databases with a single article, issue_percent_rank == ave_issue_percent_rank
+* **ave_issue_percent_rank** = For databases with multiple articles, the average issue percent rank across all of its articles was averaged. Variables range from 0.0000 to 0.9943. For databases with a single article, issue_percent_rank == ave_issue_percent_rank
 
 * **quartile** = Each ave_issue_percent_rank was binned into quartiles. Variables range from 1 to 4
 
@@ -225,7 +225,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **quartile_count_sum** = Sum of all databases in a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)         
 
-* **quartile_percent** = Percent of databases in a given maint_bin for a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)         
+* **quartile_percent** = Percent of databases in a given maint_bin for a given citation quartile for analysis of maintenance (for databases debuted between 1991-2012 only)   
 
 ### DATA ANALYSIS
 
