@@ -38,7 +38,7 @@ This dataset was developed to create a census of sufficiently documented molecul
 
 * The archived dataset that accompanies the preprint is also available at:
 
-  * Imker, Heidi (2018): Molecular Biology Databases Published in Nucleic Acids Research between 1991-2016. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-#######
+  * Imker, Heidi (2018): Molecular Biology Databases Published in Nucleic Acids Research between 1991-2016. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4311325_V1
 
 ### KEYWORDS
 
