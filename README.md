@@ -163,7 +163,7 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 
 * **std** = Standard diversion of total articles per databases within each citation quartile (for 1991-2012 only)
 
-* **raw_cit_sim** = Count of raw citations for all databases within each citation quartile (for 1991-2012 only)
+* **raw_cit_sum** = Count of raw citations for all databases within each citation quartile (for 1991-2012 only)
 
 * **curr_available_count** = Count of databases still available within each citation quartile (for 1991-2012 only)
 
