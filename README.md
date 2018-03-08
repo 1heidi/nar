@@ -306,7 +306,9 @@ databases; research infrastructure; sustainability; data sharing; molecular biol
 ### SHARING & ACCESSING INFORMATION
 
 * **Formally:** CC0 to facilitate ease-of-use
-* **Informally:** Please cite this dataset regardless. It matters to me, and provenance is important.
+* **Informally:** Please cite this dataset regardless. It matters to me, and provenance is important. The citation is:
+
+   * Imker, Heidi (2018): Molecular Biology Databases Published in Nucleic Acids Research between 1991-2016. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4311325_V1
 
 ### ADDITIONAL NOTES/COMMENTS
 
