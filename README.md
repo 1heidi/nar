@@ -34,7 +34,7 @@ This dataset was developed to create a census of sufficiently documented molecul
 
 * Please read the associated openly available research article for context, additional details, and results: 
 
-  * Imker, Heidi (2018): 25 Years of Molecular Biology Databases: A Study of Proliferation, Impact, and Maintenance. bioRxiv, XXXXXX; doi: https://doi.org/10.1101/XXXXX
+  * Imker, Heidi (2018): 25 Years of Molecular Biology Databases: A Study of Proliferation, Impact, and Maintenance. bioRxiv, XXXXXX; doi: https://doi.org/10.1101/279067
 
 * The archived dataset that accompanies the preprint is also available at:
 
